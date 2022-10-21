@@ -1,0 +1,22 @@
+
+.header a{
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.header a:after{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 2px;
+    width: 0;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.header a:hover{
+    color: aqua;
+}
+.header a:hover::after{
+    width: 100%;
+}
